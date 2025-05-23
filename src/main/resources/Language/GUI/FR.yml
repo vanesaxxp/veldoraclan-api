@@ -1,0 +1,128 @@
+clan:
+  menu:
+    delete:
+      title: "&cConfirmer la suppression du clan?"
+      confirm: "&aConfirmer"
+      confirm_lore:
+        - ""
+        - " &cCliquez pour accepter."
+      cancel: "&aAnnuler"
+      cancel_lore:
+        - ""
+        - " &eCliquez pour annuler."
+    wipe:
+      title: "&cConfirmer la vidange du coffre??"
+      confirm: "&a&lVider le coffre"
+      confirm_lore:
+        - "&7Tous les objets seront perdus."
+        - "&cCela ne peut pas être annulé!"
+        - "&eCliquez pour confirmer."
+      cancel: "&c&lAnnuler"
+      cancel_lore:
+        - "&7Retournez en toute sécurité."
+        - "&eCliquez pour annuler."
+
+clanChest:
+  title: "&a%clan% &7Page du Coffre (&b%page%&7)"
+  next:
+    title: "&cSuivant"
+    lore:
+      - " &aCliquez pour accéder à la page suivante."
+  transfer:
+    title: "&dTransférer"
+    lore:
+      - " &eCliquez pour supprimer les objets de cette page."
+  slimeBall:
+    title: "&aPage accessible : (%page%)"
+    lore:
+      - " &eUne page du coffre accessible aux membres du clan et au chef."
+
+ColorSelection:
+  title: '&6Sélectionnez la couleur de votre clan'
+  InfoItem:
+    material: BOOK
+    display_name: '&6Info Couleur du Clan'
+    lore:
+      - '&eCouleur actuelle: %current_color%'
+      - '&cLa couleur peut être changée dans: %hours% heures %minutes% minutes'
+  Change:
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&aModifiable'
+    lore:
+      - '&eLa couleur peut être changée!'
+      - '&aVous pouvez sélectionner une nouvelle couleur.'
+  Cooldown:
+    material: CLOCK
+    display_name: '&cTemps de recharge'
+    lore:
+      - '&eCouleur actuelle: %current_color%'
+      - '&cVous pouvez changer la couleur dans: %hours% heures %minutes% minutes'
+  WoolItems:
+    BLACK:
+      display_name: '&0Noir'
+      lore:
+        - '&7Cliquez pour sélectionner cette couleur noire.'
+    DARK_BLUE:
+      display_name: '&1Bleu Foncé'
+      lore:
+        - '&7Cliquez pour sélectionner ce bleu foncé.'
+    DARK_GREEN:
+      display_name: '&2Vert Foncé'
+      lore:
+        - '&7Cliquez pour sélectionner ce vert foncé.'
+    DARK_AQUA:
+      display_name: '&3Aqua Foncé'
+      lore:
+        - '&7Cliquez pour sélectionner cet aqua foncé.'
+    DARK_RED:
+      display_name: '&4Rouge Foncé'
+      lore:
+        - '&7Cliquez pour sélectionner ce rouge foncé.'
+    DARK_PURPLE:
+      display_name: '&5Violet Foncé'
+      lore:
+        - '&7Cliquez pour sélectionner ce violet foncé.'
+    GOLD:
+      display_name: '&6Or'
+      lore:
+        - '&7Cliquez pour sélectionner cette couleur or.'
+    GRAY:
+      display_name: '&7Gris'
+      lore:
+        - '&7Cliquez pour sélectionner ce gris.'
+    DARK_GRAY:
+      display_name: '&8Gris Foncé'
+      lore:
+        - '&7Cliquez pour sélectionner ce gris foncé.'
+    BLUE:
+      display_name: '&9Bleu'
+      lore:
+        - '&7Cliquez pour sélectionner ce bleu.'
+    GREEN:
+      display_name: '&aVert'
+      lore:
+        - '&7Cliquez pour sélectionner ce vert.'
+    AQUA:
+      display_name: '&bAqua'
+      lore:
+        - '&7Cliquez pour sélectionner cet aqua.'
+    RED:
+      display_name: '&cRouge'
+      lore:
+        - '&7Cliquez pour sélectionner ce rouge.'
+    LIGHT_PURPLE:
+      display_name: '&dViolet Clair'
+      lore:
+        - '&7Cliquez pour sélectionner ce violet clair.'
+    YELLOW:
+      display_name: '&eJaune'
+      lore:
+        - '&7Cliquez pour sélectionner ce jaune.'
+    WHITE:
+      display_name: '&fBlanc'
+      lore:
+        - '&7Cliquez pour sélectionner ce blanc.'
+    RESET:
+      display_name: '&fRéinitialiser la couleur du clan'
+      lore:
+        - '&7Cela réinitialise la couleur de votre clan.'

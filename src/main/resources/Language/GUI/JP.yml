@@ -1,0 +1,128 @@
+clan:
+  menu:
+    delete:
+      title: "&cクランの削除を確認しますか？"
+      confirm: "&a確認"
+      confirm_lore:
+        - ""
+        - " &cクリックして承諾する。"
+      cancel: "&aキャンセル"
+      cancel_lore:
+        - ""
+        - " &eクリックしてキャンセルする。"
+    wipe:
+      title: "&cチェストの中身を空にすることを確認しますか？？"
+      confirm: "&a&lチェストを空にする"
+      confirm_lore:
+        - "&7すべてのアイテムが失われます。"
+        - "&cこれは元に戻せません！"
+        - "&eクリックして確認する。"
+      cancel: "&c&lキャンセル"
+      cancel_lore:
+        - "&7安全に戻ります。"
+        - "&eクリックしてキャンセルする。"
+
+clanChest:
+  title: "&a%clan% &7チェストページ (&b%page%&7)"
+  next:
+    title: "&c次へ"
+    lore:
+      - " &a次のページへ進むにはクリックしてください。"
+  transfer:
+    title: "&d転送"
+    lore:
+      - " &eこのページのアイテムを削除するにはクリックしてください。"
+  slimeBall:
+    title: "&aアクセス可能なページ: (%page%)"
+    lore:
+      - " &eクランメンバーとリーダーがアクセスできるチェストページです。"
+
+ColorSelection:
+  title: '&6クランの色を選択'
+  InfoItem:
+    material: BOOK
+    display_name: '&6クラン色情報'
+    lore:
+      - '&e現在の色: %current_color%'
+      - '&c色は %hours% 時間 %minutes% 分後に変更可能'
+  Change:
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&a変更可能'
+    lore:
+      - '&e色は変更可能です！'
+      - '&a新しい色を選択できます。'
+  Cooldown:
+    material: CLOCK
+    display_name: '&cクールダウン'
+    lore:
+      - '&e現在の色: %current_color%'
+      - '&c色は %hours% 時間 %minutes% 分後に変更できます'
+  WoolItems:
+    BLACK:
+      display_name: '&0ブラック'
+      lore:
+        - '&7このブラック色を選択するにはクリックしてください。'
+    DARK_BLUE:
+      display_name: '&1ダークブルー'
+      lore:
+        - '&7このダークブルー色を選択するにはクリックしてください。'
+    DARK_GREEN:
+      display_name: '&2ダークグリーン'
+      lore:
+        - '&7このダークグリーン色を選択するにはクリックしてください。'
+    DARK_AQUA:
+      display_name: '&3ダークアクア'
+      lore:
+        - '&7このダークアクア色を選択するにはクリックしてください。'
+    DARK_RED:
+      display_name: '&4ダークレッド'
+      lore:
+        - '&7このダークレッド色を選択するにはクリックしてください。'
+    DARK_PURPLE:
+      display_name: '&5ダークパープル'
+      lore:
+        - '&7このダークパープル色を選択するにはクリックしてください。'
+    GOLD:
+      display_name: '&6ゴールド'
+      lore:
+        - '&7このゴールド色を選択するにはクリックしてください。'
+    GRAY:
+      display_name: '&7グレー'
+      lore:
+        - '&7このグレー色を選択するにはクリックしてください。'
+    DARK_GRAY:
+      display_name: '&8ダークグレー'
+      lore:
+        - '&7このダークグレー色を選択するにはクリックしてください。'
+    BLUE:
+      display_name: '&9ブルー'
+      lore:
+        - '&7このブルー色を選択するにはクリックしてください。'
+    GREEN:
+      display_name: '&aグリーン'
+      lore:
+        - '&7このグリーン色を選択するにはクリックしてください。'
+    AQUA:
+      display_name: '&bアクア'
+      lore:
+        - '&7このアクア色を選択するにはクリックしてください。'
+    RED:
+      display_name: '&cレッド'
+      lore:
+        - '&7このレッド色を選択するにはクリックしてください。'
+    LIGHT_PURPLE:
+      display_name: '&dライトパープル'
+      lore:
+        - '&7このライトパープル色を選択するにはクリックしてください。'
+    YELLOW:
+      display_name: '&eイエロー'
+      lore:
+        - '&7このイエロー色を選択するにはクリックしてください。'
+    WHITE:
+      display_name: '&fホワイト'
+      lore:
+        - '&7このホワイト色を選択するにはクリックしてください。'
+    RESET:
+      display_name: '&fクランカラーをリセット'
+      lore:
+        - '&7これによりクランカラーがリセットされます。'

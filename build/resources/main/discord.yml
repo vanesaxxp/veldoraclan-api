@@ -1,0 +1,103 @@
+ClanCreate:
+  enabled: false
+  webhook-url: https://discord.com/api/webhooks/your_webhook_url
+  webhook-title: ':star2: New Clan Created!'
+  webhook-description: ':white_check_mark: A new clan has been successfully created!'
+  webhook-thumbnail: https://minotar.net/avatar/{creator}/256
+  webhook-color: 3498db
+  inline: false
+  timestamp: true
+  fields:
+    ':shield: **Clan Name**:': '`{clan_name}`'
+    ':crown: **Created By**:': '`{creator}`'
+    ':calendar: **Creation Date**:': '`{creation_date}`'
+    ':trophy: **Total Clans Created**:': '`{total_clans}`'
+  footer:
+    text: VeldoraClan - Elite Clans System
+    icon-url: 'https://minotar.net/avatar/{creator}/256'
+  author:
+    name: '{creator}'
+    url: https://example.com/player/{creator}
+    icon-url: 'https://minotar.net/avatar/{creator}/256'
+ClanJoin:
+  enabled: false
+  webhook-url: https://discord.com/api/webhooks/your_webhook_url
+  webhook-title: ':wave: New Member Joined!'
+  webhook-description: ':white_check_mark: `{player}` has joined `{clan_name}`!'
+  webhook-thumbnail: https://minotar.net/avatar/{player}/256
+  webhook-color: 2ecc71
+  inline: false
+  timestamp: true
+  fields:
+    ':shield: **Clan Name**:': '`{clan_name}`'
+    ':bust_in_silhouette: **Player Name**:': '`{player}`'
+    ':calendar: **Join Date**:': '`{join_date}`'
+  footer:
+    text: VeldoraClan - Elite Clans System
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+  author:
+    name: '{player}'
+    url: https://example.com/player/{player}
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+ClanLeave:
+  enabled: false
+  webhook-url: https://discord.com/api/webhooks/your_webhook_url
+  webhook-title: ':wave: Member Left!'
+  webhook-description: ':x: `{player}` has left `{clan_name}`!'
+  webhook-thumbnail: https://minotar.net/avatar/{player}/256
+  webhook-color: e74c3c
+  inline: false
+  timestamp: true
+  fields:
+    ':shield: **Clan Name**:': '`{clan_name}`'
+    ':bust_in_silhouette: **Player Name**:': '`{player}`'
+    ':calendar: **Leave Date**:': '`{leave_date}`'
+  footer:
+    text: VeldoraClan - Elite Clans System
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+  author:
+    name: '{player}'
+    url: https://example.com/player/{player}
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+ClanAllyAdd:
+  enabled: false
+  webhook-url: https://discord.com/api/webhooks/your_webhook_url
+  webhook-title: ':handshake: New Alliance Formed!'
+  webhook-description: ':white_check_mark: {clan_name} and {ally_name} are now allies, initiated by {player}!'
+  webhook-thumbnail: https://minotar.net/avatar/{player}/256
+  webhook-color: 2ecc71
+  inline: true
+  timestamp: true
+  fields:
+    ':shield: **Clan Name**:': '`{clan_name}`'
+    ':handshake: **New Ally**:': '`{ally_name}`'
+    ':crown: **Initiator**:': '`{player}`'
+    ':calendar: **Alliance Date**:': '`{alliance_date}`'
+  footer:
+    text: VeldoraClan - Elite Alliances
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+  author:
+    name: '{player}'
+    url: https://example.com/player/{player}
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+ClanAllyRemove:
+  enabled: true
+  webhook-url: https://discord.com/api/webhooks/your_webhook_url
+  webhook-title: ':broken_heart: Alliance Ended'
+  webhook-description: ':x: {clan_name} and {ally_name} are no longer allies, ended by {player}!'
+  webhook-thumbnail: https://minotar.net/avatar/{player}/256
+  webhook-color: e74c3c
+  inline: false
+  timestamp: true
+  fields:
+    ':shield: **Clan Name**:': '`{clan_name}`'
+    ':broken_heart: **Former Ally**:': '`{ally_name}`'
+    ':crown: **Initiator**:': '`{player}`'
+    ':calendar: **Termination Date**:': '`{termination_date}`'
+  footer:
+    text: VeldoraClan - Alliances Broken...
+    icon-url: 'https://minotar.net/avatar/{player}/256'
+  author:
+    name: '{player}'
+    url: https://example.com/player/{player}
+    icon-url: 'https://minotar.net/avatar/{player}/256'

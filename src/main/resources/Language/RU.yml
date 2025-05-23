@@ -1,0 +1,265 @@
+# =====================
+# Командные сообщения (Command Messages) на RU
+# =====================
+commands:
+  # Общие сообщения (General messages)
+  config-reloaded: "%prefix% &aКонфигурация успешно перезагружена."
+  no-permission: "%prefix% &cУ вас нет прав для выполнения этой команды."
+  unknown-command: "%prefix% &7Неизвестная команда &cКлан &7&c❌"
+
+  # Создание клана (Clan creation)
+  Vault:
+    CreatePriceFailed: '%prefix% &7Для создания клана вам нужно &b%amount% &a$'
+    RenamePriceFailed: '%prefix% &7Для смены названия клана вам нужно &b%amount% &a$'
+  clan-exists: "%prefix% &7Клан с таким именем уже существует &c❌"
+  already-in-clan: "%prefix% &7Вы уже состоите в клане, вы не можете создать другой."
+  no-clan-name: "%prefix% &7Пожалуйста, введите имя &cКлана &7&c❌"
+  clan-name-banned: "%prefix% &7Введенное имя клана &cзапрещено ❌"
+  clan-name-too-long: "%prefix% &7Имя клана слишком длинное! Максимальная длина: &a%maxlength%"
+  clan-name-too-short: "%prefix% &7Имя клана слишком короткое! Минимальная длина: &c%minlength%"
+  not-enough-kills: "%prefix% &7Для создания клана вам нужно еще &c%remainingkill% &7убийств."
+  already-creating: "%prefix% &cВы уже создаёте клан. &c❌"
+  no-clan-creation: "%prefix% &7Вы в данный момент не создаёте клан."
+  canceled: "%prefix% &7Отменено &aуспешно."
+  clan-created: "%prefix% &7Клан успешно создан &a✔"
+
+  # Приглашения (Invitation related)
+  player-in-clan: "%prefix% &7Этот игрок уже состоит в клане."
+  player-already-leader: "%prefix% &7Этот игрок уже является лидером клана."
+  player-not-online: "%prefix% &7Этот игрок сейчас не в сети."
+  no-player-specified: "%prefix% &7Пожалуйста, укажите игрока."
+  cannot-invite-self: "%prefix% &7Вы не можете пригласить себя!"
+  clan-invite: "&a%inviter_name% &7пригласил вас в клан &c%clan_name%."
+  invite-sent: "%prefix% &7Приглашение отправлено &a✔"
+  invite-accepted: "%prefix% &7Вы приняли приглашение в клан &a✔"
+  invite-denied: "%prefix% &7Вы отклонили приглашение в клан &a✔"
+  invite-expired: "%prefix% &7Ваше приглашение в клан истекло &c❌"
+  no-clan-specified-accept: "%prefix% Пожалуйста, укажите название клана для принятия. Пример: &b/clan accept Veldora"
+  no-clan-specified-deny: "%prefix% Пожалуйста, укажите название клана для отклонения. Пример: &b/clan deny Veldora"
+  clan-full: "%prefix% &7Клан достиг максимальной вместимости."
+  no-invite: "%prefix% &7У вас нет ожидающих приглашений в &cКлан &c❌"
+  invite-cooldown: "%prefix% &7Подождите &c%remaining_time% секунд &7перед отправкой нового приглашения этому игроку."
+
+  accept-button: "&a&l[ПРИНЯТЬ]"
+  or: "&7или"
+  deny-button: "&c&l[ОТКЛОНИТЬ]"
+
+  # Передача лидерства (Clan Transfer)
+  transfer-success: "%prefix% &7Вы передали лидерство игроку &e%player% &a✔"
+  you-are-now-leader: "%prefix% &7Игрок &a%player% &7передал вам лидерство в клане."
+
+  # Сообщения о цветах (Color Messages)
+  color-set: "%prefix% &7Цвет вашего клана успешно изменен на &a%color% &a✔"
+  invalid-color: "%prefix% &7Недопустимый цвет."
+  color-wait: "%prefix% &7Вам нужно подождать &e%hours% часов &e%minutes% минут, прежде чем снова изменить цвет."
+
+  # Чат клана (Clan chat)
+  clan-chat-disabled: "%prefix% &7Чат клана &cотключен ❌"
+  clan-chat-enabled: "%prefix% &7Чат клана &aвключен ✔"
+  cannot-enable-clan-chat: "%prefix% &7Вы не можете включить клановый чат, пока активен чат союзников. &c❌"
+
+  # Отключение PvP между членами клана (PvP Disable Clan)
+  cannot-attack-clan: "%prefix% &7Вы не можете атаковать членов своего клана!"
+  pvp-enabled: "%prefix% &7PvP клана &aвключено ✔"
+  pvp-disabled: "%prefix% &7PvP клана &cотключено ❌"
+
+  # Исключение из клана и выход (Kicking and leaving)
+  no-clan: "%prefix% &7Вы не состоите в клане."
+  leader-cannot-leave: "%prefix% &7Вы являетесь лидером клана, используйте команду &c/clan delete &7для его роспуска."
+  clan-left: "%prefix% &7Вы успешно &aпокинули ✔ &7клан."
+  not-leader: "%prefix% &cЭту команду может использовать только лидер клана."
+  kick-success: "%prefix% &c%player% &7был &aисключен ✔ &7из вашего клана."
+  kicked: "%prefix% &7Вы были &cисключены &c❌ &7из клана."
+  player-not-in-clan: "%prefix% &7Этот игрок не состоит в вашем клане."
+  not-banned: "%prefix% &7Этот игрок не забанен &c❌"
+  cannot-ban-self: "%prefix% &7Вы не можете забанить себя &c❌"
+  ban-success: "%prefix% &c%player% &7игрок забанен &a✔"
+  banned-notification: "%prefix% &c%clan% &7Вы были забанены кланом."
+  unban-success: "%prefix% &aБан игрока %player% снят &a✔"
+
+  # Удаление клана (Clan deletion)
+  clan-deleted: "%prefix% &aКлан успешно удален ✔"
+
+  # Модератор клана
+  already-moderator: "%prefix% &e%player% &7уже является модератором."
+  promote-success: "%prefix% &a%player% &7был повышен до модератора."
+  promoted-notify: "%prefix% &7Вы были назначены модератором клана &7“&b%clan%&7.”"
+  not-moderator: "%prefix% &c%player% &7не является модератором."
+  demote-success: "%prefix% &a%player% &7был понижен с позиции модератора."
+  demoted-notify: "%prefix% &7Ваша роль модератора в клане &7“&b%clan%&7” была отозвана."
+
+  # Клановый раздор
+  discord:
+    link-code: "%prefix% &7Ваш код для привязки к Discord: &a%code%"
+    link-already: "%prefix% &7Вы уже привязаны к Discord ID &7(&b%discord%&7)."
+    link-cooldown: "%prefix% &7Пожалуйста, подождите &a%time% &7перед запросом нового кода!"
+
+chest:
+  paid: "%prefix% &7Вы заплатили &a%amount% $ &7за открытие кланового сундука!"
+  insufficient: "%prefix% &7У вас недостаточно средств! Требуемая сумма: &a%amount% $"
+  wipe-done: "%prefix% Ящик для голосования успешно очищен &a✔"
+  action-no-access: "%prefix% &cУ вас нет прав для доступа к этой странице сундука! Максимально доступная страница: &b%max%"
+
+clan_list_messages:
+  clan-list-title: "&bИнформация &7о Клане:"
+  clan-list-leader: "&7Лидер: &c%leader%"
+  clan-list-players: "&7Количество Игроков: &b%player-count%"
+  clan-list-kills: "&7Всего Убийств: &a%total-kills%"
+  clan-list-deaths: "&7Всего Смертей: &c%total-deaths%"
+  clan-list-kdr: "&7KDR: &a%kdr%"
+  clan-list-members: "&7Члены: &a%members%"
+  clan-list-allies: "&7Союзники: &e%allies%"
+  clan-list-no-allies: "&7Союзники: &cX"
+  clan-list-ranking: "&7Ранг: &e#&b%rank%"
+
+clan_stats_messages:
+  clan-stats-title: "&6&lИНФОРМАЦИЯ О КЛАНЕ %clan%"
+  clan-stats-leader: "&7Лидер Клана: &a%leader%"
+  clan-stats-players: "&7Количество Игроков: &a%player-count%"
+  clan-stats-kills: "&7Всего Убийств: &a%total-kills%"
+  clan-stats-deaths: "&7Всего Смертей: &a%total-deaths%"
+  clan-stats-kdr: "&7KDR: &a%kdr%"
+  clan-stats-members: "&7Члены: &a%members%"
+  clan-stats-no-allies: "&7Союзники: &cX"
+  clan-stats-allies: "&7Союзники: &a%allies%"
+  clan-stats-ranking: "&7Ранг: &a#%rank%"
+  clan-stats-not-found: "%prefix% &cКлан не найден &c❌"
+
+clan_top_messages:
+  top-clans-header: "&6&lЛУЧШИЕ КЛАНЫ"
+  top-clans-format1: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format2: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format3: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format4: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format5: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format6: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format7: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format8: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format9: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-format10: "&e%clan% &7- &c%kills% &7убийств"
+  top-clans-footer: "&r"
+
+
+# =====================
+# Сообщения команды союзников (Ally Command Messages)
+# =====================
+ally.commands:
+  cannot-attack-ally: "%prefix% &7Вы не можете атаковать союзного игрока &c❌"
+  ally-no-clan-name: "%prefix% &7Пожалуйста, введите имя &cКлана &c❌"
+  ally-invite-message: "&7Лидер клана &b%inviter_leader% &7приглашает вас заключить союз с кланом &a%inviter_clan%. Вы принимаете?"
+  ally-invite-cooldown: "%prefix% &7Подождите &c%remaining_time% секунд &7перед отправкой нового приглашения этому клану."
+  invite-sent: "%prefix% &7Приглашение в союз отправлено &a✔"
+  target-leader-offline: "%prefix% &7Лидер этого клана не в сети &c❌"
+  invite-expired: "%prefix% &7Ваше приглашение в союз истекло &c❌"
+  accept-button: "&a&l[ПРИНЯТЬ]"
+  deny-button: "&c&l[ОТКЛОНИТЬ]"
+  or: "&7или"
+  ally-accepted: "%prefix% &7Вы приняли приглашение в союз &a✔"
+  invite-accepted: "%prefix% &7Клан &a%clan% &7принял ваше приглашение в союз &a✔"
+  ally-denied: "%prefix% &7Вы отклонили приглашение в союз &c❌"
+  invite-denied: "%prefix% &7Клан &c%clan% &7отклонил ваше приглашение в союз &c❌"
+  no-pending-invite: "%prefix% &7У вас нет ожидающих приглашений в союз &c❌"
+  ally-removed: "%prefix% &7Вы разорвали союз с кланом &a%clan% ✔"
+  ally-limit-reached: "%prefix% &7Ваш лимит союзников достигнут &7(&c%limit%&7) &c❌"
+  ally-removed-notification: "%prefix% &7Клан &c%clan% &7разорвал союз с вами &c❌"
+  clan-does-not-exist: "%prefix% &7Клан с таким именем не существует."
+  already-ally: "%prefix% &7Этот клан уже является вашим союзником &c❌"
+  not-ally: "%prefix% &7Этот клан не является вашим союзником &c❌"
+  ally-own-clan: "%prefix% &7Вы не можете заключить союз с вашим собственным кланом &c❌"
+  unknown-ally-command: "%prefix% &7Неизвестная команда союзников &c❌"
+
+AllyChatMessages:
+  ally-chat-enabled: "%prefix% &7Чат союзников &aвключен ✔"
+  ally-chat-disabled: "%prefix% &7Чат союзников &cотключен ❌"
+  cannot-enable-ally-chat: "%prefix% &7Вы не можете включить чат союзников, пока активирован чат клана."
+  no-allies: "%prefix% &7У вас нет союзных кланов, вы не можете включить чат союзников &c❌"
+  not-allied: "%prefix% &7Вы не состоите в союзе с этим кланом &c❌"
+
+
+  # TRANSLATIONS OF THE CHAT ACTIONS
+
+CHAT:
+  command-unknown-player:
+    message:
+      - '%prefix% &cНеизвестная команда, &b<click:run_command:"/clan help"><hover:show_text:"&aНажмите здесь, чтобы посмотреть помощь.">&c[НАЖМИТЕ ЗДЕСЬ]&c</hover></click> &cили используйте &d/clan help &cчтобы увидеть список доступных команд.'
+    actionbar: '&d/clan help &eчтобы увидеть список доступных команд.'
+    title:
+      line: '&c! &d/clan help'
+      subline: '&cЧтобы увидеть команды!'
+  clan-create:
+    message:
+      - ' '
+      - '&c-&7---------------------------------------------&c-'
+      - '&c&l! &eВведите в чат тег &bНового Клана&e, который вы хотите создать.'
+      - '&7- Напишите &ccancel &7или <click:run_command:"/clan cancel"><hover:show_text:"&cНажмите, чтобы отменить.">&c&l[НАЖМИТЕ ЗДЕСЬ]</hover></click> &7чтобы отменить.'
+      - '&c-&7---------------------------------------------&c-'
+      - ' '
+    actionbar: '&c&l! &eВведите в чат тег вашего нового клана!'
+    title:
+      line: '! &eНовый Клан'
+      subline: 'Введите в чат!'
+  invite-receive:
+    message:
+      '1': ' '
+      '2': '&c&m-&7&m---------------------------------------------&c&m-'
+      '3': '&c!               &eПриглашение присоединиться к клану &f%clan_tag%'
+      '4': '                       <click:run_command:"/clan accept %clan_tag%"><hover:show_text:"&aНажмите для принятия, или используйте &b/clan accept %clan_tag%.">&a[ПРИНЯТЬ]</hover></click>    <click:run_command:"/clan deny %clan_tag%"><hover:show_text:"&aНажмите для отклонения, или используйте &b/clan deny %clan_tag%.">&c[ОТКЛОНИТЬ]</hover></click>'
+      '5': '&c&m-&7&m---------------------------------------------&c&m-'
+      '6': ' '
+    actionbar: '&c&l! &eПриглашение присоединиться к клану &f%clan_tag%'
+    title:
+      line: '&c! &eНовое приглашение'
+      subline: '&eКлан &f%clan_tag%'
+    bossbar: '&c&l! &eПриглашение присоединиться к клану &f%clan_tag% &c&l({time})'
+  clan-ally-receive:
+    message:
+      '1': ' '
+      '2': '&c&m-&7&m---------------------------------------------&c&m-'
+      '3': '            &c! &f%clan_tag% &eотправил запрос на союз'
+      '4': '                     &c! &eИстекает через &b%sec_expires% сек&7.'
+      '5': '                    <click:run_command:"/clan ally accept"><hover:show_text:"&aНажмите для принятия">&a[ПРИНЯТЬ]</hover></click>      <click:run_command:"/clan ally deny"><hover:show_text:"&aНажмите для отклонения">&c[ОТКЛОНИТЬ]</hover></click>'
+      '6': '&c&m-&7&m---------------------------------------------&c&m-'
+      '7': ' '
+    actionbar: '&c&l! &e>Запрос на союз получен'
+    title:
+      line: '&c! &eЗапрос на союз'
+      subline: '&eПринять или отклонить?'
+    bossbar: '&c&l! &eЗапрос на союз получен &c({time})'
+
+
+# =====================
+# Сообщения справки (Help Command Messages)
+# =====================
+clan-help:
+  border: ''
+  header: ' &bКоманда клана: &7(%page%/3)'
+  description: ''
+  footer:
+    next: ' &bВперед »'
+    previous: ' &b« Назад'
+  commands:
+    '1': '%prefix% &7/clan create &7| &eСоздает клан.'
+    '2': '%prefix% &7/clan set rename &c[name] &7| &eИзменяет имя клана.'
+    '3': '%prefix% &7/clan set color &7| &eОткрывает меню выбора цвета.'
+    '4': '%prefix% &7/clan transfer &c[player] &7| &eПередает руководство.'
+    '5': '%prefix% &7/clan delete &7| &eУдаляет клан.'
+    '6': '%prefix% &7/clan invite &c[player] &7| &eПриглашает игрока.'
+    '7': '%prefix% &7/clan accept &7| &eПринимает приглашение.'
+    '8': '%prefix% &7/clan deny &7| &eОтклоняет приглашение.'
+    '9': '%prefix% &7/clan kick &c[player] &7| &eИсключает игрока.'
+    '10': '%prefix% &7/clan ban &c[player] &7| &eБанит игрока из клана.'
+    '11': '%prefix% &7/clan unban &c[player] &7| &eСнимает бан игрока.'
+    '12': '%prefix% &7/clan promote &c[player] &7| &eПовышает члена клана до модератора.'
+    '13': '%prefix% &7/clan demote &c[player] &7| &eПонижает модератора до участника.'
+    '14': '%prefix% &7/clan leave &7| &eПокидает клан.'
+    '15': '%prefix% &7/clan pvp &7| &eПереключает PvP клана.'
+    '16': '%prefix% &7/clan chat &7| &eПереключает чат клана.'
+    '17': '%prefix% &7/clan ally chat &7| &eПереключает чат союзников.'
+    '18': '%prefix% &7/clan ally add &c[name] &7| &eДобавляет союзника.'
+    '19': '%prefix% &7/clan ally remove &c[name] &7| &eУдаляет союзника.'
+    '20': '%prefix% &7/clan ally accept &7| &eПринимает запрос союзника.'
+    '21': '%prefix% &7/clan ally deny &7| &eОтклоняет запрос союзника.'
+    '22': '%prefix% &7/clan stats &c[name] &7| &eПоказывает информацию о клане.'
+    '23': '%prefix% &7/clan list &7| &eСписок участников клана.'
+    '24': '%prefix% &7/clan top &7| &eПоказывает топ-10 кланов.'
+    '25': '%prefix% &7/clan chest &7| &eОткрывает сундук клана.'

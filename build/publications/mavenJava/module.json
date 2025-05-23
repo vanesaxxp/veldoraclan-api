@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.VeldoraClan",
+    "module": "veldoraclan-api",
+    "version": "0.3.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "veldoraclan-api-0.3.5.jar",
+          "url": "veldoraclan-api-0.3.5.jar",
+          "size": 4787180,
+          "sha512": "25c3a8a86a91c1b7486f8a3ff4b2f00b782876fd8ddaf2805e0fa51217a340921acc72b6b338e1982427f8514b2d6578a56544d1461bd0e76194f4c746d7fd45",
+          "sha256": "38a801d441f1c07fa519b48b04fda8422c7680e8e903a066db6716024edd305b",
+          "sha1": "175a8f10c28f79b3046269d9682fef3bd0c40b3e",
+          "md5": "429d31145b48162af54814b2c0e2c5c5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.DevLeoko.AdvancedBan",
+          "module": "AdvancedBan-Bukkit",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-api",
+          "version": {
+            "requires": "4.19.0"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-minimessage",
+          "version": {
+            "requires": "4.19.0"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-platform-bukkit",
+          "version": {
+            "requires": "4.3.4"
+          }
+        },
+        {
+          "group": "org.bstats",
+          "module": "bstats-bukkit",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.yaml",
+          "module": "snakeyaml",
+          "version": {
+            "requires": "2.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "veldoraclan-api-0.3.5.jar",
+          "url": "veldoraclan-api-0.3.5.jar",
+          "size": 4787180,
+          "sha512": "25c3a8a86a91c1b7486f8a3ff4b2f00b782876fd8ddaf2805e0fa51217a340921acc72b6b338e1982427f8514b2d6578a56544d1461bd0e76194f4c746d7fd45",
+          "sha256": "38a801d441f1c07fa519b48b04fda8422c7680e8e903a066db6716024edd305b",
+          "sha1": "175a8f10c28f79b3046269d9682fef3bd0c40b3e",
+          "md5": "429d31145b48162af54814b2c0e2c5c5"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "veldoraclan-api-0.3.5.jar",
+          "url": "veldoraclan-api-0.3.5.jar",
+          "size": 4787180,
+          "sha512": "25c3a8a86a91c1b7486f8a3ff4b2f00b782876fd8ddaf2805e0fa51217a340921acc72b6b338e1982427f8514b2d6578a56544d1461bd0e76194f4c746d7fd45",
+          "sha256": "38a801d441f1c07fa519b48b04fda8422c7680e8e903a066db6716024edd305b",
+          "sha1": "175a8f10c28f79b3046269d9682fef3bd0c40b3e",
+          "md5": "429d31145b48162af54814b2c0e2c5c5"
+        }
+      ]
+    }
+  ]
+}

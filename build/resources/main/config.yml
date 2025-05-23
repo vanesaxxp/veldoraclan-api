@@ -1,0 +1,151 @@
+##
+## VeldoraClan
+##
+
+# the prefix that appears before clan messages
+prefix: '&7[&cVeldoraClan&7]'
+
+# language setting
+language:
+  messages: 'ENG'
+  gui: 'ENG'
+
+# storage type: YAML or SQLITE
+Storage:
+  type: 'YAML'
+
+Clan:
+  name:
+    # allow clan-vs-clan damage
+    damage: false
+    # allow clan leaders to toggle PvP for their clan
+    pvp_toggle: true
+    # disable executable items for clan members
+    disableExecutableitemsForClanMembers: true
+    # minimum number of characters for a clan name
+    minLength: 2
+    # maximum number of characters for a clan name
+    maxLength: 16
+    # regex pattern for valid clan names
+    regex: '^[a-zA-Z0-9]*$'
+    # blacklisted clan names
+    blacklistedNames:
+      - 'admin'
+      - 'mod'
+
+  create:
+    # require a minimum number of kills to create a clan
+    killToCreate: false
+    # minimum number of kills
+    killCount: 15
+    # cooldown in seconds before creating another clan
+    cooldown: 300
+
+  chat:
+    # enable clan chat
+    enabled: true
+    # format for clan-only chat
+    chatFormat: '&7[&b%veldora_clan_tag%&7] &aClan Chat &b%player% &8» &f%message%'
+    # format for ally chat
+    allyChatFormat: '&7[&b%veldora_clan_tag%&7] &eAlly Chat &b%player% &8» &f%message%'
+
+# whether to include stats in clan leaderboards/etc.
+stats:
+  includeStats: true
+
+color:
+  # default chat/GUI color
+  default: '&e'
+  # cooldown in hours before changing color again
+  cooldown: 24
+
+invite:
+  player:
+    # cooldown in seconds between sending invites
+    invite-cooldown: 30
+    # time in seconds for an invite to expire
+    response-time: 30
+  # cooldown in seconds for inviting an ally clan
+  cooldown-invite-ally: 30
+
+rename:
+  # cooldown in hours before renaming the clan again
+  cooldown: 24
+
+limit:
+  # default maximum members per clan
+  default: 10
+  # whether to allow overriding this limit via permission nodes
+  clanLimit: true
+
+allies:
+  enabled: true
+  # whether allies can damage each other
+  damage: false
+  # enable custom ally-chat
+  allyChat: true
+  # enforce a limit on number of allies
+  limit: true
+  # default number of allied clans
+  allyLimit: 4
+
+VaultSupport:
+  enabled: false
+  # cost (via Vault) to create a clan
+  create: 100.0
+  # cost to rename a clan
+  rename: 100.0
+  # cost to open the clan chest
+  chest: 100.0
+
+Chest:
+  enabled: true
+  # number of slots in the clan chest GUI
+  slots: 54
+  # title of the chest window
+  title: '&6%clan% &cClan Chest'
+
+broadcasts:
+  # broadcast to server when clan is created
+  create: true
+  # when a player joins a clan
+  join: true
+  # when a clan is deleted
+  delete: true
+  # when a player leaves a clan
+  leave: true
+
+BroadCastMessages:
+  # server-wide messages
+  clan-create-messages: '%prefix% &7| &a%player% &ehas created a new clan named &b%clan%'
+  clan-join-player-messages: '%prefix% &7| &a%player% &ehas joined the clan &b%clan%'
+  clan-delete-messages: '%prefix% &7| &eThe clan &b%clan% &ehas been deleted by &a%player%'
+  clan-leave-player-messages: '%prefix% &7| &a%player% &ehas left the clan &b%clan%'
+
+# permission-based features
+Permission: false
+PermissionClanCreate: 'veldora.clan.create'
+PermissionClanInvite: 'veldora.clan.invite'
+PermissionClanAccept: 'veldora.clan.accept'
+PermissionClanChat: 'veldora.clan.chat'
+PermissionClanKick: 'veldora.clan.kick'
+PermissionClanTransfer: 'veldora.clan.transfer'
+PermissionClanColor: 'veldora.clan.set.color'
+PermissionClanRename: 'veldora.clan.set.rename'
+PermissionClanChest: 'veldora.clan.chest'
+PermissionClanPvp: 'veldora.clan.pvp'
+PermissionClanBan: 'veldora.clan.ban'
+PermissionClanUnBan: 'veldora.clan.unban'
+PermissionClanAllyAdd: 'veldora.clan.ally.add'
+PermissionClanAllyRemove: 'veldora.clan.ally.remove'
+PermissionClanAllyAccept: 'veldora.clan.ally.accept'
+PermissionClanAllyDeny: 'veldora.clan.ally.deny'
+PermissionClanAllyChat: 'veldora.clan.ally.chat'
+PermissionClanTopStats: 'veldora.clan.topstats'
+PermissionClanStats: 'veldora.clan.stats'
+PermissionClanLeave: 'veldora.clan.leave'
+PermissionClanDelete: 'veldora.clan.delete'
+PermissionClanList: 'veldora.clan.list'
+PermissionClanReload: 'veldora.clan.reload'
+PermissionClanLimit: 'veldora.clan.limit.X'
+PermissionClanAllyLimit: 'veldora.clan.ally.limit.X'
